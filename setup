@@ -18,6 +18,4 @@ set -e
 create_app_skel
 install_app
 write_config
-write_jvm_opts
-write_system_props
 write_control
