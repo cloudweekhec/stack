@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+set -u
+
+control_dir="$(dirname $0)"
+. $control_dir/config
+
+jvm_opts=""
+for file in `ls $control_dir/jvm-opts-* | sort`; do
+    jvm_opts="$jvm_opts `cat $file`"
+done
+
+cd $working_dir
+
+exec bash -c "
+$java \
+    -Djava.io.tmpdir=$tmp_dir \
+    -Dapp.port=$port \
+    -Dhttp.port=$port \
+    $jvm_opts \
+    -cp \"$classpath\" \
+    play.core.server.NettyServer \
+    $working_dir
+"

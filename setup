@@ -1,0 +1,21 @@
+#!/bin/bash
+
+plugin_dir="/home/plugin"
+app_dir="/home/app"
+control_dir="$plugin_dir/control"
+pkg_dir="/home/pkg"
+app_port="4444"
+log_dir="$app_dir/log"
+
+
+set -u
+set -e
+
+. "$plugin_dir/functions"
+
+create_app_skel
+install_app
+write_config
+write_jvm_opts
+write_system_props
+write_control

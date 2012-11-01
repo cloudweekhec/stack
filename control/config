@@ -1,0 +1,6 @@
+working=/Users/nicolasbuchs/Desktop/CloudBeesApp/app
+port=4444
+java=/opt/java6/bin/java
+tmp_dir=/Users/nicolasbuchs/Desktop/CloudBeesApp/tmp
+working_dir=
+classpath=/lib/*
