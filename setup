@@ -1,11 +1,12 @@
 #!/bin/bash
 
-plugin_dir="/home/plugin"
-app_dir="/home/app"
+base=$(pwd)
+plugin_dir="$base/plugin/"
 control_dir="$plugin_dir/control"
-pkg_dir="/home/pkg"
+app_dir="$base/app/"
+pkg_dir="$base/pkg/"
 app_port="4444"
-log_dir="$app_dir/log"
+log_dir="$base/log/"
 
 
 set -u
