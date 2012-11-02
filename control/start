@@ -1,4 +1,4 @@
-#!/bin/sh
+# -*-shell-script-*-
 set -e
 set -u
 
