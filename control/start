@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 control_dir="$(dirname $0)"
 . $control_dir/config
