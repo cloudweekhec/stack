@@ -10,7 +10,3 @@ install_app
 write_config
 write_control
 
-cd ~
-
-cd $plugin_dir/control
-./start
