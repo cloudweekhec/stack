@@ -72,5 +72,5 @@ write_control() {
 
 launch_app() {
     cd $plugin_dir/control
-    . start
+    ./start
 }
