@@ -13,4 +13,4 @@ write_control
 cd ~
 
 cd $plugin_dir/control
-source start
+./start
