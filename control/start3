@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ~
+
+
+. "$plugin_dir/control/functions"
+
+launch_app
+
