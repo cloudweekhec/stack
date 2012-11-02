@@ -1,0 +1,8 @@
+# -*-shell-script-*-
+
+launch_app() {
+        echo "Creating application skeleton at $app_dir"
+        IP=$(/sbin/ifconfig eth0|grep inet|awk {'print $2'}|cut -d":" -f2)
+
+        $app_dir/app/gtd/manage.py runserver $IP:$app_port
+}

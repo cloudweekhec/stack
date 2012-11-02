@@ -1,5 +1,9 @@
 #!/bin/bash
 
-IP=$(/sbin/ifconfig eth0|grep inet|awk {'print $2'}|cut -d":" -f2)
- 
-$app_dir/app/gtd/manage.py runserver $IP:$app_port
+cd ~
+
+
+. "$plugin_dir/control/functions"
+
+launch_app
+
