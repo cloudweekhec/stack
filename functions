@@ -70,7 +70,4 @@ write_control() {
     install -m 550 $plugin_dir/control/start $control_dir
 }
 
-launch_app() {
-    cd $plugin_dir/control
-    ./start
-}
+

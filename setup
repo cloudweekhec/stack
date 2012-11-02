@@ -9,4 +9,8 @@ create_app_skel
 install_app
 write_config
 write_control
-launch_app
+
+cd ~
+
+cd $plugin_dir/control
+source start
