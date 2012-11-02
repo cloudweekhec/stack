@@ -4,5 +4,5 @@ control_dir="$(dirname $0)"
 . $control_dir/config
 
 IP=$(/sbin/ifconfig eth0|grep inet|awk {'print $2'}|cut -d":" -f2)
-cd $app_dir/app/gtd
-manage.py runserver $IP:$app_port
+
+$app_dir/app/gtd/manage.py runserver $IP:$app_port
