@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-set -u
 
 control_dir="$(dirname $0)"
 . $control_dir/config
